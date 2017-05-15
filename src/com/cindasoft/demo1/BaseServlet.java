@@ -25,7 +25,7 @@ import java.security.cert.X509Certificate;
  * 这个Servlet映射的URL即客户端访问路径（从这里进入系统）
  */
 public class BaseServlet extends HttpServlet {
-    static String ydIdentifyURL="https://192.168.1.88:7443/cgi/identify?token=";
+    static String ydIdentifyURL="http://192.168.1.88:7443/cgi/identify?token=";
     static  CloseableHttpClient client;
     static ObjectMapper mapper=new ObjectMapper();
     static {
